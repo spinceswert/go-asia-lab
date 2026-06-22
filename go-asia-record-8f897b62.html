@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料索引 · 世界杯知识档案</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f3ef;
+            font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+            line-height: 1.7;
+            color: #1f2a2f;
+        }
+
+        /* 深色头图区域 */
+        .hero {
+            background: #0b1a24;
+            background-image: radial-gradient(circle at 30% 40%, #1c3a4a 0%, #081017 100%);
+            padding: 5.5rem 2rem 4rem;
+            text-align: center;
+            color: #d8e2e8;
+            border-bottom: 1px solid #2b4b5a;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            color: #eef3f7;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            font-style: italic;
+            opacity: 0.7;
+            max-width: 680px;
+            margin: 0 auto 0.8rem;
+        }
+
+        .hero .dateline {
+            display: inline-block;
+            font-size: 0.85rem;
+            border-bottom: 1px dashed #537a8a;
+            padding-bottom: 4px;
+            letter-spacing: 0.3px;
+        }
+
+        /* 正文容器 */
+        .content {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+            background: #fbfaf7;
+            box-shadow: 0 0 40px rgba(0,0,0,0.04);
+        }
+
+        .content p {
+            margin-bottom: 1.6rem;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .content p:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            border-left: 4px solid #b07d4b;
+            padding-left: 1.2rem;
+            margin-bottom: 2rem;
+            color: #3b4a52;
+            font-weight: 400;
+        }
+
+        .highlight-link {
+            color: #9d6b3c;
+            text-decoration: none;
+            border-bottom: 1px dotted #b9976b;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 400;
+            padding: 0 1px;
+        }
+
+        .highlight-link:hover {
+            color: #664624;
+            border-bottom: 1px solid #664624;
+        }
+
+        .pull-quote {
+            background: #edebe6;
+            border-left: 3px solid #b07d4b;
+            padding: 1.2rem 1.8rem;
+            margin: 2.5rem 0 2rem;
+            font-style: italic;
+            border-radius: 0 6px 6px 0;
+            color: #2f3e46;
+            font-size: 1.05rem;
+            position: relative;
+        }
+
+        .pull-quote::before {
+            content: "📌";
+            font-style: normal;
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        .faq-note {
+            background: #f0f0ec;
+            padding: 1.8rem 2rem;
+            border-radius: 12px;
+            margin: 2.2rem 0 1rem;
+            border: 1px solid #dad7ce;
+        }
+
+        .faq-note h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: #1a2c34;
+            letter-spacing: 0.02em;
+        }
+
+        .faq-note ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .faq-note li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #cdc9bf;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .faq-note li:last-child {
+            border-bottom: none;
+        }
+
+        .faq-label {
+            font-weight: 600;
+            color: #7a5a34;
+            min-width: 4.8rem;
+        }
+
+        .signoff {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #d5cfc4;
+            font-size: 0.95rem;
+            color: #5a6b72;
+            letter-spacing: 0.02em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .signoff a {
+            color: #7a5a34;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .signoff a:hover {
+            border-bottom: 1px solid #7a5a34;
+        }
+
+        /* 响应式 */
+        @media (max-width: 620px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .content {
+                padding: 2rem 1.2rem 3.5rem;
+            }
+            .content p {
+                font-size: 1rem;
+            }
+            .faq-note {
+                padding: 1.4rem 1.2rem;
+            }
+            .faq-note li {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+            .signoff {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>资料整理者的世界杯档案</h1>
+    <p class="sub">从赛程纪要到历史数据 —— 一份安静的信息索引</p>
+    <span class="dateline">编纂于 2025 · 持续补全中</span>
+</section>
+
+<div class="content">
+
+    <p class="lead">
+        世界杯的历史跨度超过九十年，单是决赛圈球队、球场与经典交锋的记录，就足以构成绵密的资料网络。这篇文章不追逐热点，而尝试以整理者的视角，梳理那些值得被归档的信息节点。
+    </p>
+
+    <p>
+        最早的世界杯档案往往散落在旧报纸和赛事年鉴里。1930 年蒙得维的亚的十三支参赛队，1954 年伯尔尼的奇迹，1970 年墨西哥城的艺术足球——每一届都对应着独特的规则背景与社会切面。信息的价值不在于罗列，而在于建立关联：当你把某届冠军的阵容、当赛季俱乐部表现以及裁判尺度的变化放在一起看，很多结论会自然浮现。这也是我持续收集原始资料的原因。
+    </p>
+
+    <p>
+        在整理过程中，我发现几个经常被忽略的素材维度：其一是预选赛的出线路径演变，其二是不同大洲的轮换逻辑，其三是比赛用球与场地技术的迭代。这些都和决赛圈同样重要。对于希望深入理解<a href="https://go-asia-shijiebei.com" class="highlight-link">世界杯</a>整体脉络的读者而言，从这些边角资料切入，反而更容易建立自己的认知框架。
+    </p>
+
+    <p>
+        另一个值得留意的信息类型是“非正式记录”——比如某支球队在非官方热身赛中的阵容试验，或者主办国在筹备期的基础设施报告。这些材料很少被主流回顾文章引用，却往往能解释正赛中的意外走向。我的文件夹里存着近五届的球场容量变化表、电视转播机位图，以及各队训练营选址分析，它们一直在帮助我更准确地理解赛程背后的逻辑。
+    </p>
+
+    <div class="pull-quote">
+        索引本身就是一种叙事。好的资料集不会告诉你该想什么，而是让你发现自己能看见什么。
+    </div>
+
+    <p>
+        正因为如此，这个站点的定位始终是“整理中”而非“已完成”。每一届大赛结束之后，新增的统计数据、战术报告和影像档案都需要重新归类。如果你对某一届赛事或某支球队的原始数据有疑问，可以来我的资料库里对照查阅——目前已经收录了从 1962 年至今的 A 级赛事记录、裁判报告摘要和部分赛前赔率变化曲线。这些内容全部来自公开来源，不包含任何内部或未经核实的信息。
+    </p>
+
+    <p>
+        对于初次接触世界杯资料整理的朋友，我建议先从“单届赛事的时间线”开始。把开幕日、小组赛关键战、淘汰赛转折点以及赛后颁奖并列在一张表格里，你很快就能发现周期的韵律。然后再加入球队阵容的年龄结构、主教练更迭等变量，分析就会变得立体。我的做法是每看完一届，就做一页简单的“索引卡”，方便后续交叉检索。
+    </p>
+
+    <div class="faq-note">
+        <h3>常见资料分类（FAQ 摘要）</h3>
+        <ul>
+            <li><span class="faq-label">赛历与场地</span> 历届举办城市、体育场容量、草种类型、气候数据</li>
+            <li><span class="faq-label">球队档案</span> 参赛次数、最佳战绩、历届教练与队长名单</li>
+            <li><span class="faq-label">规则变迁</span> 小组赛赛制、红黄牌引入、VAR 启用时间点</li>
+            <li><span class="faq-label">数据补充</span> 射手榜、助攻统计、零封场次、平均年龄</li>
+            <li><span class="faq-label">媒体记录</span> 官方纪录片、国际信号制作方、版权转播范围</li>
+        </ul>
+    </div>
+
+    <p>
+        以上分类会随着新一届赛事逐渐扩充。我的目标是让每一条信息都能追溯到原始出处，同时保持索引的轻量——不堆砌没有上下文的数字。如果你在查阅时发现某个数据有出入，欢迎指正，因为资料整理本来就是不断校订的过程。
+    </p>
+
+    <p>
+        最后一点建议：在翻阅任何汇总之前，最好先确认自己关心的具体问题。是某届冠军的晋级之路？还是某位球员的出场序列？把问题写下来，再顺着索引查找，远比漫无目的地浏览有效。毕竟，好的索引不是终点，而是通往更深入理解的起点。
+    </p>
+
+    <div class="signoff">
+        <span>✎ 资料归档 · 持续修订</span>
+        <span>关于 <a href="https://go-asia-shijiebei.com">世界杯</a> 的更多原始记录</span>
+    </div>
+
+</div>
+
+</body>
+</html>
